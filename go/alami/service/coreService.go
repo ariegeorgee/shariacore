@@ -96,7 +96,7 @@ func (CoreService) GetBankData(path string) []*model.Nasabah {
 }
 
 func (CoreService) CreateCSV(nasabahList []*model.Nasabah) {
-	csvFile, err := os.Create("Nasabah.csv")
+	csvFile, err := os.Create("After Eod.csv")
 	if err != nil {
 		log.Fatalf("failed creating file: %s", err)
 		return
